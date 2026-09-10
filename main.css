@@ -1,0 +1,67 @@
+:root {
+    /*fundos*/
+    --fundo-primario: #0D0D0D;
+    --fundo-nav: #020202;
+    --fundo-nav-2: #1d1d1d;
+    --borda-nav: #8C8C8C;
+
+    /*letras*/
+    --textos-basicos: #F2F2F2;
+    --botao-idle: #f29f0573;
+    --botao-habilitado: #F29F05;
+    --botao-desabilitado: #1b1b1b;
+}
+
+@font-face {
+    font-family: 'Tagmarker';
+    src: url('fontes/tagmarker.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Tagmarker', sans-serif;
+    background-color: var(--fundo-primario);
+}
+
+.nav-tabs {
+    border-color: var(--borda-nav);
+    background-color: var(--fundo-nav);
+
+    .nav-link {
+        color: var(--botao-idle);
+    }
+
+    .nav-link.active {
+        color: var(--botao-habilitado);
+        border-color: var(--borda-nav);
+        background-color: var(--fundo-nav-2);
+    }
+
+    .nav-link.disabled {
+        color: var(--botao-desabilitado);
+    }
+
+    .nav-link:hover {
+        color: var(--botao-habilitado)
+    }
+}
+
+.grupo-nav-1 {
+    display: flex;
+    align-items: center;
+}
+
+.grupo-nav-1 img {
+    max-height: 2.3rem;
+    width: auto;
+}
+
+.container {
+    color: var(--textos-basicos);
+    background-color: var(--fundo-primario);
+}
+
+.justificado {
+    text-align: justify;
+}

@@ -92,6 +92,12 @@
 /*imagem 3*/
 /*carrossel*/
 
+.principal {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 /*Cartões*/
 .card {
     width: 18rem;

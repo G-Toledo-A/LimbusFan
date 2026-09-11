@@ -3,13 +3,11 @@
     height: 100vh
 }
 
-/* Garante que o link ocupe todo o espaço da coluna e centralize a imagem */
-.preencher-tudo .row a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.img-personagem {
+    max-height: 100dvh;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Restringe a imagem ao espaço disponível da coluna */
@@ -25,4 +23,19 @@
 /* Efeito de zoom limpo ao passar o mouse */
 .sinner:hover {
     transform: scale(1.08);
+}
+
+/*info sinner*/
+.info-personagem {
+    padding: 12px 16px;
+    border-left: 3px solid var(--vermelho);
+    background-color: var(--surface);
+}
+
+.info-personagem h5 {
+    margin-bottom: 6px;
+}
+
+.info-personagem p {
+    margin-bottom: 0;
 }

@@ -7,30 +7,31 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel='stylesheet' href='CSS/inicial.css'>
+    <link rel='stylesheet' href='CSS/sinners.css'>
 </head>
 <body>
     <!--Barra de navegação -->
     <ul class="nav nav-tabs d-flex justify-content-between sticky-top">
         <div class="grupo-nav-1 d-flex">
             <img src="imagens/logo_limbus.png">
-            <img src="imagens/title_limbus.png">
+            <img src="imagens/palavras_fonte_limbus/title_limbus.png">
         </div>
 
         <div class="grupo-nav-2 d-flex">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="loadPage('home')"">Página Inicial</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sinners</a>
+                <a class="nav-link" href="#" onclick="loadPage('sinners')">Sinners</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">IDs</a>
+                <a class="nav-link" href="#" onclick="loadPage('ID')">IDs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">EGOs</a>
+                <a class="nav-link" href="#" onclick="loadPage('EGO')">EGOs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true" href="#">Cantos</a>
+                <a class="nav-link disabled" aria-disabled="true" href="#">Times</a>
             </li>
         </div>
             
@@ -42,230 +43,12 @@
     <!--Barra de navegação -->
 
     <!--Conteudo principal -->
-    <div class="container text-center">
-
-        <!--Explicação Midia-->
-        <div class="row">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                
-                                <video autoplay loop muted playsinline class="cidade-video">
-                                    <source src="imagens/a_cidade.mp4" type="video/mp4">
-                                </video>
-
-                                <div class="card-img-overlay img-overlay-1">
-                                    <h1 class="card-title">Do que se trata</h1>
-
-                                    <p class="card-text justificado">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Alias eaque tenetur aliquid accusantium corrupti accusamus, 
-                                        maiores beatae consequatur ipsam, omnis dolor doloribus 
-                                        sint rem dicta. Alias nihil corporis facere vel.
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="carousel-item">
-                                
-                                <img src="imagens/library_lobotomy.jpeg" alt="Imagem de capa de LC e LOR">
-
-                                <div class="card-img-overlay img-overlay-2">
-                                    <center>
-                                        <h1 class="card-title">Outros jogos</h1>
-                                        
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Alias eaque tenetur aliquid accusantium corrupti accusamus, 
-                                            maiores beatae consequatur ipsam, omnis dolor doloribus 
-                                            sint rem dicta. Alias nihil corporis facere vel.
-                                        </p>
-                                    </center>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-
-                                <img src="imagens/project_moon.jpg" class="d-block w-100" alt="...">
-
-                                <div class="card-img-overlay img-overlay-3">
-                                    <h1 class="card-title">Desenvolvedora</h1>
-                                    
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Alias eaque tenetur aliquid accusantium corrupti accusamus, 
-                                        maiores beatae consequatur ipsam, omnis dolor doloribus 
-                                        sint rem dicta. Alias nihil corporis facere vel.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                </div> 
-            </div>
-        </div>
-        <!--Explicação Midia-->
-
-        <hr />
-
-        <!--Cards para pular direto para uma parte especifica-->
-        <div class="row g-4 justify-content-center">
-
-            <div class="col-xl-4 d-flex justify-content-center"><!--1 de 3-->
-
-                <div class="card">
-                    <img src="imagens/loading.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Historia</h5>
-                        <p class="card-text">Pular para explicação da história.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-4 d-flex justify-content-center"><!--1 de 3-->
-                <div class="card">
-                    <img src="imagens/Steamgif_1.gif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Gameplay</h5>
-                        <p class="card-text">Pular para a explicação da gameplay.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-4 d-flex justify-content-center"><!--1 de 3-->
-                <div class="card">
-                    <img src="imagens/recursos.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Recursos</h5>
-                        <p class="card-text">Pular para a explicação dos recursos.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <!--Cards para pular direto para uma parte especifica-->
-
-        <hr />
-
-        <!--Explicação Lore-->
-        <div class="row">
-            <div class="col-xl-12"><!--1 de 1-->
-                <img src="imagens/word1_limbus.png">
-            </div>
-        </div>
-
-        <hr />
-
-        <div class="row">
-            <div class="col-xl-6"><!--1 de 2-->
-                <h2>Contexto</h2>
-                <p class="justificado">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam facilis assumenda impedit harum distinctio architecto 
-                    consequatur sed neque velit fuga! Quisquam nulla adipisci at 
-                    molestiae reprehenderit, dolor doloremque vero officiis.
-                    <br />
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam facilis assumenda impedit harum distinctio architecto 
-                    consequatur sed neque velit fuga! Quisquam nulla adipisci at 
-                    molestiae reprehenderit, dolor doloremque vero officiis.
-                </p>
-            </div>
-            <div class="col-xl-6"><!--1 de 2-->
-                <img class="img-fluid rounded" src="imagens/pilar_of_light.webp">
-            </div>
-        </div>
-
-        <hr />
-
-        <div class="row">
-            <div class="col-xl-6"><!--1 de 2-->
-                <img class="img-fluid rounded" src="imagens/WingCG.webp">
-            </div>
-            <div class="col-xl-6"><!--1 de 2-->
-                <h2>Mundo</h2>
-                <p class="justificado">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam facilis assumenda impedit harum distinctio architecto 
-                    consequatur sed neque velit fuga! Quisquam nulla adipisci at 
-                    molestiae reprehenderit, dolor doloremque vero officiis.
-                    <br />
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam facilis assumenda impedit harum distinctio architecto 
-                    consequatur sed neque velit fuga! Quisquam nulla adipisci at 
-                    molestiae reprehenderit, dolor doloremque vero officiis.
-                </p>
-            </div>
-        </div>
-
-        <hr />
-
-        <div class="row">
-            <div class="col-xl-6"><!--1 de 2-->
-                <h2>Presente</h2>
-                <p class="justificado">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam facilis assumenda impedit harum distinctio architecto 
-                    consequatur sed neque velit fuga! Quisquam nulla adipisci at 
-                    molestiae reprehenderit, dolor doloremque vero officiis.
-                    <br />
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam facilis assumenda impedit harum distinctio architecto 
-                    consequatur sed neque velit fuga! Quisquam nulla adipisci at 
-                    molestiae reprehenderit, dolor doloremque vero officiis.
-                </p>
-            </div>
-
-            <div class="col-xl-6"><!--1 de 2-->
-                <img class="img-fluid rounded" src="imagens/historia.jpeg">
-            </div>
-        </div>
-        <!--Explicação Lore-->
-
-        <hr />
-
-        <!--Explicação gameplay-->
-        <div class="row">
-            <div class="col-xl-12"><!--1 de 1-->
-                <img src="imagens/word2_limbus.png">
-            </div>
-        </div>
-        <!--Explicação gameplay-->
-
-        <hr />
-
-        <!--Explicação gameplay-->
-        <div class="row">
-            <div class="col-xl-12"><!--1 de 1-->
-                <img src="imagens/word3_limbus.png">
-            </div>
-        </div>
-        <!--Explicação gameplay-->
-
-        <hr />
+    <div id="content" class="container text-center h-100 w-100">
+        <!--Conteudo aqui-->
     </div>
     <!-- Conteudo principal -->
     
+    <script src="JS/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

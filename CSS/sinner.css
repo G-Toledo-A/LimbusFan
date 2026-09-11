@@ -1,0 +1,27 @@
+/* Força o link a ocupar o espaço da imagem e ficar por cima de containers transparentes */
+.row a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Aplica o hover diretamente na imagem */
+.sinner {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out !important;
+}
+
+/* Animação disparada quando passa o mouse sobre o link ou sobre a imagem */
+.row a:hover .sinner,
+.sinner:hover {
+    transform: scale(1.1) !important;
+}

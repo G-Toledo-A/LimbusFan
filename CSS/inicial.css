@@ -14,15 +14,8 @@
     --botao-desabilitado: #1b1b1b;
 }
 
-@font-face {
-    font-family: 'Tagmarker';
-    src: url('fontes/tagmarker.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: 'Tagmarker', sans-serif;
+    font-family: sans-serif;
     background-color: var(--fundo-primario);
 }
 

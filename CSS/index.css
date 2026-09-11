@@ -1,0 +1,80 @@
+:root {
+    /*fundos*/
+    --fundo-primario: #0D0D0D;
+    --fundo-nav: #020202;
+    --fundo-nav-2: #1d1d1d;
+    --fundo-nav-2-hover: #3b3b3b;
+    --borda-nav: #8C8C8C;
+
+    /*letras*/
+    --textos-basicos: #F2F2F2;
+    --botao-idle: #f29f0573;
+    --botao-habilitado: #F29F05;
+    --botao-habilitado-hover: #ffbd41;
+    --botao-desabilitado: #1b1b1b;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--fundo-primario);
+}
+
+/*barra de navegação*/
+.nav-tabs {
+    border-color: var(--borda-nav);
+    background-color: var(--fundo-nav);
+
+    .nav-link {
+        color: var(--botao-idle);
+    }
+
+    .nav-link.active {
+        color: var(--botao-habilitado);
+        border-color: var(--borda-nav);
+        background-color: var(--fundo-nav-2);
+    }
+
+    .nav-link.active:hover {
+        color: var(--botao-habilitado-hover);
+        background-color: var(--fundo-nav-2-hover);
+    }
+
+    .nav-link.disabled {
+        color: var(--botao-desabilitado);
+    }
+
+    .nav-link:hover {
+        color: var(--botao-habilitado)
+    }
+}
+
+.grupo-nav-1 {
+    display: flex;
+    align-items: center;
+}
+
+.grupo-nav-1 img {
+    max-height: 2.3rem;
+    width: auto;
+}
+
+/*barra de pesquisa*/
+.form-control {
+    padding-top: 3px;
+    height: 80%;
+}
+
+/*botão de pesquisa*/
+.btn-outline-success {
+    height: 80%;
+    padding-top: 3px;
+    color: var(--botao-habilitado);
+    border-color: var(--botao-habilitado);
+}
+
+.btn-outline-success:hover {
+    color: var(--botao-habilitado-hover);
+    border-color: var(--botao-habilitado-hover);
+    background-color: var(--fundo-nav-2-hover);
+}
+/*barra de navegação*/
